@@ -1,6 +1,6 @@
 module.exports = {
   base: process.env.NODE_ENV_BASE === 'production' ? '/edu-bosssoft-press/' : '/',
-  dest: 'edu-bosssoft-press',
+  dest: process.env.NODE_ENV_BASE === 'production' ? 'edu-bosssoft-press' : 'public',
   lang: 'zh-CN',
   title: '智付校园整合文档',
   port: 3600,
