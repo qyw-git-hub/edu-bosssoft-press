@@ -1,5 +1,5 @@
 module.exports = {
-  base: '/edu-bosssoft-press/',
+  base: process.env.NODE_ENV_BASE === 'production' ? '/edu-bosssoft-press/' : '/',
   dest: 'edu-bosssoft-press',
   lang: 'zh-CN',
   title: '智付校园整合文档',
